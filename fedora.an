@@ -169,7 +169,7 @@
 	"expanded:images/panoc_03.png":"nil",
 	"expanded:images/sport.gif":"nil",
 	"expanded:images/sA.gif":"nil",
-	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
 	"expanded:images/panorab_05.png":"nil",
 	"expanded:images/fedoraA2.gif":"nil",
 	"symbol_fumee":{},
@@ -220,15 +220,22 @@
 		"element_${fedoraB}":{
 			"timelineColor2":"0x4fa275",
 			"timelineColor3":"0x456a55",
+			"invisible":"false",
 			"timelineColor":"0x50bd82"},
-		"element_${fedoraA}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"timelineColor":"0x00bda4"},
+		"dummyStageParentWidth":"713px",
+		"dummyStageParentHeight":"170px",
+		"defaultStageParentWidth":"713px",
 		"element_${FEDORA}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
-			"timelineColor":"0x91c767"}},
+			"timelineColor":"0x91c767"},
+		"element_${fedoraA}":{
+			"timelineColor2":"0x1aa38f",
+			"invisible":"false",
+			"timelineColor":"0x00bda4",
+			"animationEnabled":"false",
+			"timelineColor3":"0x2a6a61"},
+		"defaultStageParentHeight":"170px"},
 	"symbol_Gratteciel5":{
 		"element_${Gratteciel5}":{
 			"timelineColor2":"0x107faa",

@@ -34,6 +34,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          sym.stageWidth = sym.$('Stage').width();
          sym.animTimelineLength = 40000;
          
+         marionStinkt = false;
+         
          curPos = 0;
          
          sym.onSwipe = function(pos)

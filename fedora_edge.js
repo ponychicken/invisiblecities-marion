@@ -1845,27 +1845,22 @@
                 content: {
                     dom: [
                         {
-                            type: 'group',
                             id: 'FEDORA',
-                            rect: [0, 0, 713, 168, 'auto', 'auto'],
+                            type: 'group',
+                            rect: ['0', '0', '713', '168', 'auto', 'auto'],
                             c: [
                             {
-                                type: 'image',
-                                id: 'fedoraA',
-                                rect: [0, 2, 713, 168, 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/fedoraA2.gif', '0px', '0px']
-                            },
-                            {
-                                type: 'image',
                                 id: 'fedoraB',
-                                rect: [9, 7, 700, 153, 'auto', 'auto'],
+                                type: 'image',
+                                rect: ['9', '7', '700', '153', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/fedoraB.gif', '0px', '0px']
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 713, 170]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '713', '170']
                         }
                     }
                 },
