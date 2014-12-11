@@ -274,7 +274,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
    
       Symbol.bindElementAction(compId, symbolName, "${RectangleGratteciel}", "touchstart", function(sym, e) {
-         var xPosition = e.originalEvent.pageX;
+         var xPosition = e.touches[0].pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("grattecielstadt");
          
@@ -291,23 +291,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          
          
-         eineStadt.$('gratteciel').fadeIn(2000);
+         eineStadt.$('gratteciel').show(2000);
          
          setTimeout(function() { 
-         eineStadt.$('gratteciel').fadeOut(2000)
+         eineStadt.$('gratteciel').hide(2000)
          }, 4000);
          
          
          
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutongratteciel").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutongratteciel").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutongratteciel").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutongratteciel").show(2000)
          }, 4000);
          
          
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleGratteciel").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleGratteciel").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleGratteciel").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleGratteciel").show(2000)
          }, 4000);
          
          
@@ -320,7 +320,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${RectangleSport}", "touchstart", function(sym, e) {
-         var xPosition = e.originalEvent.pageX;
+         var xPosition = e.touches[0].pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("sportstadt");
          
@@ -337,23 +337,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          
          
-         eineStadt.$('sport').fadeIn(2000);
+         eineStadt.$('sport').show(2000);
          
          setTimeout(function() { 
-         eineStadt.$('sport').fadeOut(2000)
+         eineStadt.$('sport').hide(2000)
          }, 4000);
          
          
          
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonsport2").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonsport2").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonsport2").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonsport2").show(2000)
          }, 4000);
          
          
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleSport").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleSport").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleSport").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleSport").show(2000)
          }, 4000);
          
          
@@ -365,7 +365,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${RectangleAuto}", "touchstart", function(sym, e) {
-         var xPosition = e.originalEvent.pageX;
+         var xPosition = e.touches[0].pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("autostadt");
          
@@ -383,23 +383,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          
          // Name des gifs eintragen
-         eineStadt.$('autos').fadeIn(2000);
+         eineStadt.$('autos').show(2000);
          
          setTimeout(function() { 
-         eineStadt.$('autos').fadeOut(2000)
+         eineStadt.$('autos').hide(2000)
          }, 4000);
          
          
          //Name des blaue element details eintragen und direction wie man da hinkommt
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("blauestrasse").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("blauestrasse").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("blauestrasse").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("blauestrasse").show(2000)
          }, 4000);
          
          //Name des knopfs(RectangleBlabla) eintragen und direction wie man da hinkommt
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleAuto").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleAuto").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleAuto").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectangleAuto").show(2000)
          }, 4000);
          
          
@@ -410,7 +410,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${RectanglePalast}", "touchstart", function(sym, e) {
-         var xPosition = e.originalEvent.pageX;
+         var xPosition = e.touches[0].pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("palaststadt");
          
@@ -427,23 +427,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          
          // Name des gifs eintragen
-         eineStadt.$('palaststadt').fadeIn(2000);
+         eineStadt.$('palaststadt').show(2000);
          
          setTimeout(function() { 
-         eineStadt.$('palaststadt').fadeOut(2000)
+         eineStadt.$('palaststadt').hide(2000)
          }, 4000);
          
          
          //Name des blaue element details eintragen und direction wie man da hinkommt
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonpalast").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonpalast").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonpalast").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("parallax").getSymbol("Ebene2").$("boutonpalast").show(2000)
          }, 4000);
          
          //Name des knopfs(RectangleBlabla) eintragen und direction wie man da hinkommt
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectanglePalast").fadeOut(2000);
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectanglePalast").hide(2000);
          setTimeout(function() { 
-         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectanglePalast").fadeIn(2000)
+         sym.getParentSymbol().getParentSymbol().getSymbol("neuKnopf").getSymbol("Knoepfe").$("RectanglePalast").show(2000)
          }, 4000);
          
          
