@@ -100,7 +100,7 @@
                             id: 'textes',
                             symbolName: 'textes',
                             type: 'rect',
-                            rect: ['-482', '180', '4292', '400', 'auto', 'auto']
+                            rect: ['-482px', '179px', '4292', '400', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -117,32 +117,32 @@
                     autoPlay: false,
                     data: [
                         [
+                            "eid584",
+                            "left",
+                            119,
+                            0,
+                            "linear",
+                            "${textes}",
+                            '-482px',
+                            '-482px'
+                        ],
+                        [
+                            "eid253",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${grattecielstadt}",
+                            'block',
+                            'block'
+                        ],
+                        [
                             "eid575",
                             "display",
                             0,
                             0,
                             "linear",
                             "${vogelGruppe}",
-                            'block',
-                            'block'
-                        ],
-                        [
-                            "eid576",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${Voegel}",
-                            'block',
-                            'block'
-                        ],
-                        [
-                            "eid351",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${titre}",
                             'block',
                             'block'
                         ],
@@ -157,22 +157,22 @@
                             'block'
                         ],
                         [
-                            "eid316",
-                            "display",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${palaststadt}",
-                            'block',
-                            'block'
-                        ],
-                        [
-                            "eid253",
+                            "eid351",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${grattecielstadt}",
+                            "${titre}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid576",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${Voegel}",
                             'block',
                             'block'
                         ],
@@ -183,6 +183,26 @@
                             0,
                             "easeOutQuad",
                             "${sportstadt}",
+                            'block',
+                            'block'
+                        ],
+                        [
+                            "eid585",
+                            "top",
+                            119,
+                            0,
+                            "linear",
+                            "${textes}",
+                            '179px',
+                            '179px'
+                        ],
+                        [
+                            "eid316",
+                            "display",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${palaststadt}",
                             'block',
                             'block'
                         ]
@@ -1358,46 +1378,6 @@
                     ]
                 }
             },
-            "blauetreppe": {
-                version: "5.0.1",
-                minimumCompatibleVersion: "5.0.0",
-                build: "5.0.1.386",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: [0, 0, '400px', '400px', 'auto', 'auto'],
-                            id: 'boutonhochhaus1',
-                            type: 'image',
-                            display: 'block',
-                            fill: ['rgba(0,0,0,0)', 'images/boutonhochhaus1.png', '0px', '0px']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, 400, 400]
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-                        [
-                            "eid38",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${boutonhochhaus1}",
-                            'block',
-                            'block'
-                        ]
-                    ]
-                }
-            },
             "gratteciel": {
                 version: "5.0.1",
                 minimumCompatibleVersion: "5.0.0",
@@ -2135,46 +2115,6 @@
                     ]
                 }
             },
-            "texte": {
-                version: "5.0.1",
-                minimumCompatibleVersion: "5.0.0",
-                build: "5.0.1.386",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: [0, 0, 4292, 400, 'auto', 'auto'],
-                            id: 'text',
-                            symbolName: 'text',
-                            type: 'rect',
-                            opacity: '1'
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, 4292, 400]
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 14500,
-                    autoPlay: false,
-                    data: [
-                        [
-                            "eid370",
-                            "left",
-                            0,
-                            14500,
-                            "easeOutQuad",
-                            "${text}",
-                            '0px',
-                            '-9484px'
-                        ]
-                    ]
-                }
-            },
             "textes": {
                 version: "5.0.1",
                 minimumCompatibleVersion: "5.0.0",
@@ -2211,195 +2151,6 @@
                             '0px',
                             '-12492px'
                         ]
-                    ]
-                }
-            },
-            "sky": {
-                version: "5.0.1",
-                minimumCompatibleVersion: "5.0.0",
-                build: "5.0.1.386",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            type: 'group',
-                            id: 'Group2',
-                            opacity: '0.1',
-                            rect: [0, 0, '6143', '1536', 'auto', 'auto'],
-                            c: [
-                            {
-                                id: 'himmel2',
-                                type: 'image',
-                                rect: [0, 0, '4096px', '1536px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/himmel2.jpg', '0px', '0px']
-                            },
-                            {
-                                id: 'himmel2b',
-                                type: 'image',
-                                rect: [4096, 0, '2047px', '1536px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/himmel2b.jpg', '0px', '0px']
-                            }]
-                        },
-                        {
-                            type: 'group',
-                            id: 'Group',
-                            opacity: '0.12',
-                            rect: [-4095, 0, '6143', '1536', 'auto', 'auto'],
-                            c: [
-                            {
-                                id: 'himmel1',
-                                type: 'image',
-                                rect: [0, 0, '4096px', '1536px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/himmel1.jpg', '0px', '0px']
-                            },
-                            {
-                                id: 'himmel1b',
-                                type: 'image',
-                                rect: [4094, 0, '2047px', '1536px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', 'images/himmel1b.jpg', '0px', '0px']
-                            }]
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, 4096, 1536]
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 15000,
-                    autoPlay: true,
-                    data: [
-                        [
-                            "eid96",
-                            "left",
-                            0,
-                            15000,
-                            "linear",
-                            "${Group}",
-                            '-4095px',
-                            '0px'
-                        ],
-                        [
-                            "eid95",
-                            "left",
-                            0,
-                            15000,
-                            "linear",
-                            "${Group2}",
-                            '0px',
-                            '-4095px'
-                        ],
-                        [
-                            "eid99",
-                            "opacity",
-                            15000,
-                            0,
-                            "linear",
-                            "${Group2}",
-                            '0.1',
-                            '0.1'
-                        ],
-                        [
-                            "eid102",
-                            "opacity",
-                            15000,
-                            0,
-                            "linear",
-                            "${Group}",
-                            '0.12',
-                            '0.12'
-                        ]
-                    ]
-                }
-            },
-            "Fumee": {
-                version: "5.0.1",
-                minimumCompatibleVersion: "5.0.0",
-                build: "5.0.1.386",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: ['0', '572', '258', '467', 'auto', 'auto'],
-                            id: 'fumee3',
-                            opacity: '0.26184578252033',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['649', '669', '417px', '756px', 'auto', 'auto'],
-                            id: 'fumee5',
-                            opacity: '0.34924415165816',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['503', '607', '417px', '756px', 'auto', 'auto'],
-                            id: 'fumee4a',
-                            opacity: '0.27610518292683',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee9.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['510', '629', '417px', '756px', 'auto', 'auto'],
-                            id: 'fumee4b',
-                            opacity: '0.29065040650407',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['1617', '301', '417px', '756px', 'auto', 'auto'],
-                            id: 'fumee2',
-                            opacity: '0.2919524898374',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee2.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['22567', '385', '354', '672', 'auto', 'auto'],
-                            id: 'fumee85',
-                            opacity: '0.28534679878049',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['24693', '402', '417px', '756px', 'auto', 'auto'],
-                            id: 'fumee88',
-                            opacity: '0.26197281504065',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['1617', '314', '417px', '756px', 'auto', 'auto'],
-                            id: 'fumee1',
-                            opacity: '0.34286077235772',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee1.gif', '0px', '0px']
-                        },
-                        {
-                            rect: ['24736', '591', '306', '573', 'auto', 'auto'],
-                            id: 'fumee24',
-                            opacity: '0.17727388211382',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/fumee2.gif', '0px', '0px']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '25110', '1425']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-
                     ]
                 }
             },

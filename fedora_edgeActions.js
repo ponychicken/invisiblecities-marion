@@ -226,14 +226,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    //=========================================================
    
-   //Edge symbol: 'blauetreppe'
-   (function(symbolName) {   
-   
-   })("blauetreppe");
-   //Edge symbol end:'blauetreppe'
-
-   //=========================================================
-   
    //Edge symbol: 'gratteciel'
    (function(symbolName) {   
    
@@ -546,45 +538,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    //=========================================================
    
-   //Edge symbol: 'texte'
-   (function(symbolName) {   
-   
-   })("texte");
-   //Edge symbol end:'texte'
-
-   //=========================================================
-   
    //Edge symbol: 'textes'
    (function(symbolName) {   
    
    })("textes");
    //Edge symbol end:'textes'
-
-   //=========================================================
-
-   //=========================================================
-   
-   //Edge symbol: 'sky'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 15000, function(sym, e) {
-         // Play the timeline at a label or specific time. For example:
-         // sym.play(500); or sym.play("myLabel");
-         sym.play(0);
-
-      });
-      //Edge binding end
-
-   })("sky");
-   //Edge symbol end:'sky'
-
-   //=========================================================
-   
-   //Edge symbol: 'Fumee'
-   (function(symbolName) {   
-   
-   })("Fumee");
-   //Edge symbol end:'Fumee'
 
    //=========================================================
    
