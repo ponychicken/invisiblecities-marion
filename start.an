@@ -169,7 +169,7 @@
 	"expanded:images/panoc_03.png":"nil",
 	"expanded:images/sport.gif":"nil",
 	"expanded:images/sA.gif":"nil",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"expanded:images/panorab_05.png":"nil",
 	"expanded:images/fedoraA2.gif":"nil",
 	"symbol_fumee":{},
@@ -301,7 +301,7 @@
 	"expanded:images/intro1.png":"nil",
 	"pref__general__GenerateSmoothTransitions":"true",
 	"expanded:images/panoc_02.png":"nil",
-	"HTMLFileName":"fedora.html",
+	"HTMLFileName":"start.html",
 	"expanded:images/panoramab_01.png":"nil",
 	"symbol_oiseauxGruppe":{},
 	"expanded:images/panorae_01.png":"nil",
@@ -1422,8 +1422,9 @@
 		"element_${Voegel}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad",
 			"animationEnabled":"true",
-			"timelineColor":"0x2f73ad"},
+			"invisible":"false"},
 		"element_${panorae_05}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
@@ -1564,8 +1565,9 @@
 		"element_${vogelGruppe}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767",
 			"animationEnabled":"true",
-			"timelineColor":"0x91c767"},
+			"invisible":"false"},
 		"element_${intro2}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",

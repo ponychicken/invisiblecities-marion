@@ -2026,79 +2026,80 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
+                            rect: ['1340', '91', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro1',
-                            rect: [1340, 91, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro1.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['1937', '164', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro2',
-                            rect: [1937, 164, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['2973', '423', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro3',
-                            rect: [2973, 423, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro3.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['3598', '500', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro4',
-                            rect: [3598, 500, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro4.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['5114', '197', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro5',
-                            rect: [5114, 197, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro5.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['6212', '9', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro7',
-                            rect: [6212, 9, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro7.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['6833', '141', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro8',
-                            rect: [6833, 141, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro8.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['8630', '-82', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro9',
-                            rect: [8630, -82, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro9.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['9406', '50', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro10',
-                            rect: [9406, 50, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro10.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['10472', '235', '3180px', '200px', 'auto', 'auto'],
                             id: 'intro11',
-                            rect: [10472, 235, '3180px', '200px', 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.5', '0.5', 1], ['50%', '50%']],
+                            transform: [[], [], [], ['0.5', '0.5']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/intro11.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 4292, 400]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '4292', '400']
                         }
                     }
                 },
@@ -2120,15 +2121,16 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
                             id: 'text3',
                             symbolName: 'text',
-                            rect: [0, 0, 4292, 400, 'auto', 'auto']
+                            rect: ['0', '0', '4292', '400', 'auto', 'auto'],
+                            type: 'rect'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 4292, 400]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '4292', '400']
                         }
                     }
                 },
@@ -2506,17 +2508,18 @@
                 content: {
                     dom: [
                         {
-                            rect: [2593, 28, 570, 191, 'auto', 'auto'],
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.76', '0.76', 1], ['50%', '50%']],
-                            id: 'oiseauxGroupe',
-                            opacity: '1',
                             type: 'rect',
-                            symbolName: 'oiseauxGroupe_1'
+                            transform: [[], [], [], ['0.76', '0.76']],
+                            id: 'oiseauxGroupe',
+                            symbolName: 'oiseauxGroupe_1',
+                            opacity: '1',
+                            rect: ['2593', '28', '570', '191', 'auto', 'auto']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 433, 145]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '433', '145']
                         }
                     }
                 },
@@ -2871,5 +2874,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("fedora_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("start_edgeActions.js");
 })("EDGE-66808672");
