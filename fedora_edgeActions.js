@@ -39,7 +39,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          sym.onSwipe = function(pos)
          {
          	var diff = sym.startPosTouch - pos;
-         	curPos = sym.startPosTime + diff/80;
+         	curPos = sym.startPosTime + diff/40;
          
          	if (curPos < 0) curPos = 0;
          	if (curPos > 2048) curPos = 2048;

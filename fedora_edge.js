@@ -1458,25 +1458,18 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 0, 1347, 897, 'auto', 'auto'],
+                            rect: ['0', '0', '1347', '897', 'auto', 'auto'],
                             type: 'image',
-                            display: 'none',
-                            opacity: '1',
                             id: 'sport',
+                            opacity: '1',
+                            display: 'none',
                             fill: ['rgba(0,0,0,0)', 'images/sport.gif', '0px', '0px']
-                        },
-                        {
-                            preload: 'auto',
-                            rect: ['33', '30', '320px', '45px', 'auto', 'auto'],
-                            source: ['media/sport.mp3'],
-                            id: 'sportaudio',
-                            type: 'audio',
-                            tag: 'audio'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 956, 759]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '956', '759']
                         }
                     }
                 },
@@ -1493,8 +1486,7 @@
                             "${sport}",
                             'none',
                             'none'
-                        ],
-                            [ "eid201", "trigger", 0, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${sportaudio}', [] ] ]
+                        ]
                     ]
                 }
             },
@@ -2333,63 +2325,63 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 572, 258, 467, 'auto', 'auto'],
+                            rect: ['0', '572', '258', '467', 'auto', 'auto'],
                             id: 'fumee3',
                             opacity: '0.26184578252033',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            rect: [649, 669, '417px', '756px', 'auto', 'auto'],
+                            rect: ['649', '669', '417px', '756px', 'auto', 'auto'],
                             id: 'fumee5',
                             opacity: '0.34924415165816',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            rect: [503, 607, '417px', '756px', 'auto', 'auto'],
+                            rect: ['503', '607', '417px', '756px', 'auto', 'auto'],
                             id: 'fumee4a',
                             opacity: '0.27610518292683',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee9.gif', '0px', '0px']
                         },
                         {
-                            rect: [510, 629, '417px', '756px', 'auto', 'auto'],
+                            rect: ['510', '629', '417px', '756px', 'auto', 'auto'],
                             id: 'fumee4b',
                             opacity: '0.29065040650407',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            rect: [1617, 301, '417px', '756px', 'auto', 'auto'],
+                            rect: ['1617', '301', '417px', '756px', 'auto', 'auto'],
                             id: 'fumee2',
                             opacity: '0.2919524898374',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee2.gif', '0px', '0px']
                         },
                         {
-                            rect: [22567, 385, 354, 672, 'auto', 'auto'],
+                            rect: ['22567', '385', '354', '672', 'auto', 'auto'],
                             id: 'fumee85',
                             opacity: '0.28534679878049',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            rect: [24693, 402, '417px', '756px', 'auto', 'auto'],
+                            rect: ['24693', '402', '417px', '756px', 'auto', 'auto'],
                             id: 'fumee88',
                             opacity: '0.26197281504065',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            rect: [1617, 314, '417px', '756px', 'auto', 'auto'],
+                            rect: ['1617', '314', '417px', '756px', 'auto', 'auto'],
                             id: 'fumee1',
                             opacity: '0.34286077235772',
                             type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee1.gif', '0px', '0px']
                         },
                         {
-                            rect: [24736, 591, 306, 573, 'auto', 'auto'],
+                            rect: ['24736', '591', '306', '573', 'auto', 'auto'],
                             id: 'fumee24',
                             opacity: '0.17727388211382',
                             type: 'image',
@@ -2398,7 +2390,8 @@
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 25110, 1425]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '25110', '1425']
                         }
                     }
                 },

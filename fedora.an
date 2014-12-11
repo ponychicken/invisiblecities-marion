@@ -320,16 +320,20 @@
 	"expanded:villevivante1/":"false",
 	"expanded:images/panorac_01.png":"nil",
 	"symbol_sport":{
+		"defaultStageParentHeight":"759px",
+		"dummyStageParentHeight":"759px",
 		"element_${sport}":{
 			"timelineColor2":"0x4fa275",
 			"timelineColor3":"0x456a55",
 			"animationEnabled":"true",
 			"timelineColor":"0x50bd82"},
+		"dummyStageParentWidth":"956px",
 		"element_${sportaudio}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
-			"animationEnabled":"true",
-			"timelineColor":"0x2f73ad"}},
+			"animationEnabled":"false",
+			"timelineColor":"0x2f73ad"},
+		"defaultStageParentWidth":"956px"},
 	"expanded:images/boutonsport.png":"nil",
 	"expanded:tram1/":"false",
 	"expanded:eglise/":"false",
@@ -2479,11 +2483,13 @@
 	"expanded:images/panoraf_01.png":"nil",
 	"mediagroup_media/sport.mp3":"sport",
 	"symbol_Fumee":{
+		"dummyStageParentWidth":"25110px",
 		"element_${fumeeEbeneB}":{
 			"timelineColor2":"0xd8b467",
 			"timelineColor3":"0x81714f",
 			"animationEnabled":"false",
 			"timelineColor":"0xffd46d"},
+		"dummyStageParentHeight":"1425px",
 		"element_${fumee3}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
@@ -2517,6 +2523,11 @@
 			"timelineColor3":"0x456a55",
 			"invisible":"false",
 			"timelineColor":"0x50bd82"},
+		"element_${fumee4b}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8"},
+		"defaultStageParentWidth":"25110px",
 		"element_${fumee88}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
@@ -2536,10 +2547,7 @@
 			"timelineColor3":"0x29647e",
 			"animationEnabled":"false",
 			"timelineColor":"0x00a9fa"},
-		"element_${fumee4b}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"timelineColor":"0x008dc8"},
+		"defaultStageParentHeight":"1425px",
 		"element_${fumee5}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
