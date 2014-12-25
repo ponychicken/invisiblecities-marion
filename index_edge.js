@@ -16,7 +16,8 @@
         resources = [
         ],
         scripts = [
-            js+"howler.js"
+            js+"howler.js",
+            js+"jquery-2.0.3.min.js"
         ],
         symbols = {
             "stage": {
@@ -117,14 +118,14 @@
                     autoPlay: false,
                     data: [
                         [
-                            "eid576",
-                            "display",
-                            0,
+                            "eid584",
+                            "left",
+                            119,
                             0,
                             "linear",
-                            "${Voegel}",
-                            'block',
-                            'block'
+                            "${textes}",
+                            '-482px',
+                            '-482px'
                         ],
                         [
                             "eid253",
@@ -147,12 +148,12 @@
                             'block'
                         ],
                         [
-                            "eid316",
+                            "eid252",
                             "display",
                             0,
                             0,
-                            "easeInQuad",
-                            "${palaststadt}",
+                            "easeOutQuad",
+                            "${sportstadt}",
                             'block',
                             'block'
                         ],
@@ -167,22 +168,22 @@
                             'block'
                         ],
                         [
-                            "eid584",
-                            "left",
-                            119,
+                            "eid576",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${textes}",
-                            '-482px',
-                            '-482px'
+                            "${Voegel}",
+                            'block',
+                            'block'
                         ],
                         [
-                            "eid254",
+                            "eid316",
                             "display",
                             0,
                             0,
                             "easeInQuad",
-                            "${autostadt}",
+                            "${palaststadt}",
                             'block',
                             'block'
                         ],
@@ -197,12 +198,12 @@
                             '179px'
                         ],
                         [
-                            "eid252",
+                            "eid254",
                             "display",
                             0,
                             0,
-                            "easeOutQuad",
-                            "${sportstadt}",
+                            "easeInQuad",
+                            "${autostadt}",
                             'block',
                             'block'
                         ]
@@ -219,488 +220,488 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 768, '6144', '768', 'auto', 'auto'],
-                            id: 'Group',
                             type: 'group',
+                            id: 'Group',
+                            rect: [0, 768, '6144', '768', 'auto', 'auto'],
                             c: [
                             {
-                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_05',
                                 type: 'image',
+                                id: 'panoa_05',
+                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_05.png', '0px', '0px']
                             },
                             {
-                                rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_06',
                                 type: 'image',
+                                id: 'panoa_06',
+                                rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_06.png', '0px', '0px']
                             },
                             {
-                                rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_07',
                                 type: 'image',
+                                id: 'panoa_07',
+                                rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_07.png', '0px', '0px']
                             },
                             {
-                                rect: [3072, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_08',
                                 type: 'image',
+                                id: 'panoa_08',
+                                rect: [3072, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_08.png', '0px', '0px']
                             },
                             {
-                                rect: [4096, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panob_05',
                                 type: 'image',
+                                id: 'panob_05',
+                                rect: [4096, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panob_05.png', '0px', '0px']
                             },
                             {
-                                rect: [5120, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panob_06',
                                 type: 'image',
+                                id: 'panob_06',
+                                rect: [5120, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panob_06.png', '0px', '0px']
                             }]
                         },
                         {
-                            rect: [6144, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_07',
                             type: 'image',
+                            id: 'panob_07',
+                            rect: [6144, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_07.png', '0px', '0px']
                         },
                         {
-                            rect: [7168, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_08',
                             type: 'image',
+                            id: 'panob_08',
+                            rect: [7168, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_08.png', '0px', '0px']
                         },
                         {
-                            rect: [7168, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_04',
                             type: 'image',
+                            id: 'panob_04',
+                            rect: [7168, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_04.png', '0px', '0px']
                         },
                         {
-                            rect: [8192, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_05',
                             type: 'image',
+                            id: 'panoc_05',
+                            rect: [8192, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_05.png', '0px', '0px']
                         },
                         {
-                            rect: [9216, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_06',
                             type: 'image',
+                            id: 'panoc_06',
+                            rect: [9216, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_06.png', '0px', '0px']
                         },
                         {
-                            rect: [10240, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_07',
                             type: 'image',
+                            id: 'panoc_07',
+                            rect: [10240, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_07.png', '0px', '0px']
                         },
                         {
-                            rect: [11264, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_08',
                             type: 'image',
+                            id: 'panoc_08',
+                            rect: [11264, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_08.png', '0px', '0px']
                         },
                         {
-                            rect: [11264, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_04',
                             type: 'image',
+                            id: 'panoc_04',
+                            rect: [11264, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_04.png', '0px', '0px']
                         },
                         {
-                            rect: [10240, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_03',
                             type: 'image',
+                            id: 'panoc_03',
+                            rect: [10240, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_03.png', '0px', '0px']
                         },
                         {
-                            rect: [6144, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_03',
                             type: 'image',
+                            id: 'panob_03',
+                            rect: [6144, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_03.png', '0px', '0px']
                         },
                         {
-                            rect: [12287, 0, '8185', '1536', 'auto', 'auto'],
-                            id: 'Group5',
                             type: 'group',
+                            id: 'Group5',
+                            rect: [12287, 0, '8185', '1536', 'auto', 'auto'],
                             c: [
                             {
-                                rect: [1, 768, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panod_05',
                                 type: 'image',
+                                id: 'panod_05',
+                                rect: [1, 768, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panod_05.png', '0px', '0px']
                             },
                             {
-                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panod_01',
                                 type: 'image',
+                                id: 'panod_01',
+                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panod_01.png', '0px', '0px']
                             },
                             {
-                                rect: [1025, '0', '7160', '1536', 'auto', 'auto'],
-                                id: 'Group4',
                                 type: 'group',
+                                id: 'Group4',
+                                rect: [1025, '0', '7160', '1536', 'auto', 'auto'],
                                 c: [
                                 {
-                                    rect: [0, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_06',
                                     type: 'image',
+                                    id: 'panod_06',
+                                    rect: [0, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_06.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [1024, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_07',
                                     type: 'image',
+                                    id: 'panod_07',
+                                    rect: [1024, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_07.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [2048, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_08',
                                     type: 'image',
+                                    id: 'panod_08',
+                                    rect: [2048, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_08.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_02',
                                     type: 'image',
+                                    id: 'panod_02',
+                                    rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_02.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_03',
                                     type: 'image',
+                                    id: 'panod_03',
+                                    rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_03.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_04',
                                     type: 'image',
+                                    id: 'panod_04',
+                                    rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_04.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [3072, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_05',
                                     type: 'image',
+                                    id: 'panoe_05',
+                                    rect: [3072, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_05.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [4089, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_06',
                                     type: 'image',
+                                    id: 'panoe_06',
+                                    rect: [4089, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_06.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [5113, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_07',
                                     type: 'image',
+                                    id: 'panoe_07',
+                                    rect: [5113, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_07.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [6136, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_08',
                                     type: 'image',
+                                    id: 'panoe_08',
+                                    rect: [6136, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_08.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [6136, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_04',
                                     type: 'image',
+                                    id: 'panoe_04',
+                                    rect: [6136, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_04.png', '0px', '0px']
                                 }]
                             }]
                         },
                         {
-                            rect: [20472, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panof_05',
                             type: 'image',
+                            id: 'panof_05',
+                            rect: [20472, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panof_05.png', '0px', '0px']
                         },
                         {
-                            rect: [21495, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panof_06',
                             type: 'image',
+                            id: 'panof_06',
+                            rect: [21495, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panof_06.png', '0px', '0px']
                         },
                         {
-                            rect: [22519, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panof_07',
                             type: 'image',
+                            id: 'panof_07',
+                            rect: [22519, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panof_07.png', '0px', '0px']
                         },
                         {
-                            rect: [20472, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panof_01',
                             type: 'image',
+                            id: 'panof_01',
+                            rect: [20472, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panof_01.png', '0px', '0px']
                         },
                         {
-                            rect: [22606, 768, '6144', '768', 'auto', 'auto'],
-                            id: 'GroupCopy',
                             type: 'group',
+                            id: 'GroupCopy',
+                            rect: [22606, 768, '6144', '768', 'auto', 'auto'],
                             c: [
                             {
-                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_05Copy',
                                 type: 'image',
+                                id: 'panoa_05Copy',
+                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_05.png', '0px', '0px']
                             },
                             {
-                                rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_06Copy',
                                 type: 'image',
+                                id: 'panoa_06Copy',
+                                rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_06.png', '0px', '0px']
                             },
                             {
-                                rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_07Copy',
                                 type: 'image',
+                                id: 'panoa_07Copy',
+                                rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_07.png', '0px', '0px']
                             },
                             {
-                                rect: [3072, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panoa_08Copy',
                                 type: 'image',
+                                id: 'panoa_08Copy',
+                                rect: [3072, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panoa_08.png', '0px', '0px']
                             },
                             {
-                                rect: [4096, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panob_05Copy',
                                 type: 'image',
+                                id: 'panob_05Copy',
+                                rect: [4096, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panob_05.png', '0px', '0px']
                             },
                             {
-                                rect: [5120, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panob_06Copy',
                                 type: 'image',
+                                id: 'panob_06Copy',
+                                rect: [5120, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panob_06.png', '0px', '0px']
                             }]
                         },
                         {
-                            rect: [28750, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_07Copy',
                             type: 'image',
+                            id: 'panob_07Copy',
+                            rect: [28750, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_07.png', '0px', '0px']
                         },
                         {
-                            rect: [29774, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_08Copy',
                             type: 'image',
+                            id: 'panob_08Copy',
+                            rect: [29774, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_08.png', '0px', '0px']
                         },
                         {
-                            rect: [29774, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_04Copy',
                             type: 'image',
+                            id: 'panob_04Copy',
+                            rect: [29774, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_04.png', '0px', '0px']
                         },
                         {
-                            rect: [30798, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_05Copy',
                             type: 'image',
+                            id: 'panoc_05Copy',
+                            rect: [30798, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_05.png', '0px', '0px']
                         },
                         {
-                            rect: [31822, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_06Copy',
                             type: 'image',
+                            id: 'panoc_06Copy',
+                            rect: [31822, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_06.png', '0px', '0px']
                         },
                         {
-                            rect: [32846, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_07Copy',
                             type: 'image',
+                            id: 'panoc_07Copy',
+                            rect: [32846, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_07.png', '0px', '0px']
                         },
                         {
-                            rect: [33870, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_08Copy',
                             type: 'image',
+                            id: 'panoc_08Copy',
+                            rect: [33870, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_08.png', '0px', '0px']
                         },
                         {
-                            rect: [33870, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_04Copy',
                             type: 'image',
+                            id: 'panoc_04Copy',
+                            rect: [33870, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_04.png', '0px', '0px']
                         },
                         {
-                            rect: [32846, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoc_03Copy',
                             type: 'image',
+                            id: 'panoc_03Copy',
+                            rect: [32846, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoc_03.png', '0px', '0px']
                         },
                         {
-                            rect: [28750, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panob_03Copy',
                             type: 'image',
+                            id: 'panob_03Copy',
+                            rect: [28750, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panob_03.png', '0px', '0px']
                         },
                         {
-                            rect: [34893, 0, '8185', '1536', 'auto', 'auto'],
-                            id: 'Group5Copy',
                             type: 'group',
+                            id: 'Group5Copy',
+                            rect: [34893, 0, '8185', '1536', 'auto', 'auto'],
                             c: [
                             {
-                                rect: [1, 768, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panod_05Copy',
                                 type: 'image',
+                                id: 'panod_05Copy',
+                                rect: [1, 768, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panod_05.png', '0px', '0px']
                             },
                             {
-                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                                id: 'panod_01Copy',
                                 type: 'image',
+                                id: 'panod_01Copy',
+                                rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/panod_01.png', '0px', '0px']
                             },
                             {
-                                rect: [1025, '0', '7160', '1536', 'auto', 'auto'],
-                                id: 'Group4Copy',
                                 type: 'group',
+                                id: 'Group4Copy',
+                                rect: [1025, '0', '7160', '1536', 'auto', 'auto'],
                                 c: [
                                 {
-                                    rect: [0, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_06Copy',
                                     type: 'image',
+                                    id: 'panod_06Copy',
+                                    rect: [0, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_06.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [1024, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_07Copy',
                                     type: 'image',
+                                    id: 'panod_07Copy',
+                                    rect: [1024, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_07.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [2048, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_08Copy',
                                     type: 'image',
+                                    id: 'panod_08Copy',
+                                    rect: [2048, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_08.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_02Copy',
                                     type: 'image',
+                                    id: 'panod_02Copy',
+                                    rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_02.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_03Copy',
                                     type: 'image',
+                                    id: 'panod_03Copy',
+                                    rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_03.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panod_04Copy',
                                     type: 'image',
+                                    id: 'panod_04Copy',
+                                    rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panod_04.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [3072, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_05Copy',
                                     type: 'image',
+                                    id: 'panoe_05Copy',
+                                    rect: [3072, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_05.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [4089, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_06Copy',
                                     type: 'image',
+                                    id: 'panoe_06Copy',
+                                    rect: [4089, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_06.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [5113, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_07Copy',
                                     type: 'image',
+                                    id: 'panoe_07Copy',
+                                    rect: [5113, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_07.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [6136, 768, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_08Copy',
                                     type: 'image',
+                                    id: 'panoe_08Copy',
+                                    rect: [6136, 768, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_08.png', '0px', '0px']
                                 },
                                 {
-                                    rect: [6136, 0, '1024px', '768px', 'auto', 'auto'],
-                                    id: 'panoe_04Copy',
                                     type: 'image',
+                                    id: 'panoe_04Copy',
+                                    rect: [6136, 0, '1024px', '768px', 'auto', 'auto'],
                                     fill: ['rgba(0,0,0,0)', 'images/panoe_04.png', '0px', '0px']
                                 }]
                             }]
                         },
                         {
-                            rect: [43078, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panof_05Copy',
                             type: 'image',
+                            id: 'panof_05Copy',
+                            rect: [43078, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panof_05.png', '0px', '0px']
                         },
                         {
-                            rect: [43078, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panof_01Copy',
                             type: 'image',
+                            id: 'panof_01Copy',
+                            rect: [43078, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panof_01.png', '0px', '0px']
                         },
                         {
-                            rect: [21730, 1235, '1951px', '1066px', 'auto', 'auto'],
-                            id: 'montagne3copie2',
                             transform: [[0, 0, 0], ['-5', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne3copie2',
                             type: 'image',
+                            rect: [21730, 1235, '1951px', '1066px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         },
                         {
-                            rect: [44418, 952, '2038px', '732px', 'auto', 'auto'],
-                            id: 'montagne13',
                             type: 'image',
+                            id: 'montagne13',
+                            rect: [44418, 952, '2038px', '732px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne1.png', '0px', '0px']
                         },
                         {
-                            rect: [44683, 863, '349px', '881px', 'auto', 'auto'],
-                            id: 'tour1',
                             type: 'image',
+                            id: 'tour1',
+                            rect: [44683, 863, '349px', '881px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/tour1.png', '0px', '0px']
                         },
                         {
-                            rect: [45368, 1196, '1951px', '1066px', 'auto', 'auto'],
-                            id: 'montagne3copie3',
                             type: 'image',
+                            id: 'montagne3copie3',
+                            rect: [45368, 1196, '1951px', '1066px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         },
                         {
-                            rect: [43847, 1018, '1360px', '761px', 'auto', 'auto'],
-                            id: 'montagne6copie',
                             type: 'image',
+                            id: 'montagne6copie',
+                            rect: [43847, 1018, '1360px', '761px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne6copie.png', '0px', '0px']
                         },
                         {
-                            rect: [-1836, 1224, '2038px', '732px', 'auto', 'auto'],
-                            id: 'montagne1',
                             transform: [[0, 0, 0], ['-169', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne1',
                             type: 'image',
+                            rect: [-1836, 1224, '2038px', '732px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne1.png', '0px', '0px']
                         },
                         {
-                            rect: [-3806, 1271, '1360px', '761px', 'auto', 'auto'],
-                            id: 'montagne6copie2',
                             transform: [[0, 0, 0], ['-190', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne6copie2',
                             type: 'image',
+                            rect: [-3806, 1271, '1360px', '761px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne6copie.png', '0px', '0px']
                         },
                         {
-                            rect: [-4612, '831', 2150, 1172, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'startmontain1',
                             symbolName: 'startmontain1',
-                            type: 'rect'
+                            rect: [-4612, '831', 2150, 1172, 'auto', 'auto']
                         },
                         {
-                            rect: [-3269, 1065, '1951px', '1066px', 'auto', 'auto'],
-                            id: 'montagne3copie',
                             transform: [[0, 0, 0], ['-25', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne3copie',
                             type: 'image',
+                            rect: [-3269, 1065, '1951px', '1066px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         },
                         {
-                            rect: [2129, -199, 25110, 1425, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Fumee_1',
                             symbolName: 'Fumee_1',
-                            type: 'rect'
+                            rect: [2129, -199, 25110, 1425, 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -727,356 +728,356 @@
                 content: {
                     dom: [
                         {
-                            rect: [1, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_05',
                             type: 'image',
+                            id: 'panoraa_05',
+                            rect: [1, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_05.png', '0px', '0px']
                         },
                         {
-                            rect: [1025, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_06',
                             type: 'image',
+                            id: 'panoraa_06',
+                            rect: [1025, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_06.png', '0px', '0px']
                         },
                         {
-                            rect: [2049, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_07',
                             type: 'image',
+                            id: 'panoraa_07',
+                            rect: [2049, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_07.png', '0px', '0px']
                         },
                         {
-                            rect: [3073, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_08',
                             type: 'image',
+                            id: 'panoraa_08',
+                            rect: [3073, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_08.png', '0px', '0px']
                         },
                         {
-                            rect: [1, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_01',
                             type: 'image',
+                            id: 'panoraa_01',
+                            rect: [1, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_01.png', '0px', '0px']
                         },
                         {
-                            rect: [1025, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_02',
                             type: 'image',
+                            id: 'panoraa_02',
+                            rect: [1025, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_02.png', '0px', '0px']
                         },
                         {
-                            rect: [3073, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraa_04',
                             type: 'image',
+                            id: 'panoraa_04',
+                            rect: [3073, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraa_04.png', '0px', '0px']
                         },
                         {
-                            rect: [4097, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_01',
                             type: 'image',
+                            id: 'panorab_01',
+                            rect: [4097, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_01.png', '0px', '0px']
                         },
                         {
-                            rect: [4097, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_05',
                             type: 'image',
+                            id: 'panorab_05',
+                            rect: [4097, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_05.png', '0px', '0px']
                         },
                         {
-                            rect: [5120, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_06',
                             type: 'image',
+                            id: 'panorab_06',
+                            rect: [5120, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_06.png', '0px', '0px']
                         },
                         {
-                            rect: [6144, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_07',
                             type: 'image',
+                            id: 'panorab_07',
+                            rect: [6144, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_07.png', '0px', '0px']
                         },
                         {
-                            rect: [7168, 769, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_08',
                             type: 'image',
+                            id: 'panorab_08',
+                            rect: [7168, 769, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_08.png', '0px', '0px']
                         },
                         {
-                            rect: [5120, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_02',
                             type: 'image',
+                            id: 'panorab_02',
+                            rect: [5120, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_02.png', '0px', '0px']
                         },
                         {
-                            rect: [6144, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_03',
                             type: 'image',
+                            id: 'panorab_03',
+                            rect: [6144, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_03.png', '0px', '0px']
                         },
                         {
-                            rect: [7168, 1, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorab_04',
                             type: 'image',
+                            id: 'panorab_04',
+                            rect: [7168, 1, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorab_04.png', '0px', '0px']
                         },
                         {
-                            rect: [8192, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_05',
                             type: 'image',
+                            id: 'panorac_05',
+                            rect: [8192, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_05.png', '0px', '0px']
                         },
                         {
-                            rect: [9216, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_06',
                             type: 'image',
+                            id: 'panorac_06',
+                            rect: [9216, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_06.png', '0px', '0px']
                         },
                         {
-                            rect: [10240, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_07',
                             type: 'image',
+                            id: 'panorac_07',
+                            rect: [10240, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_07.png', '0px', '0px']
                         },
                         {
-                            rect: [11264, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_08',
                             type: 'image',
+                            id: 'panorac_08',
+                            rect: [11264, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_08.png', '0px', '0px']
                         },
                         {
-                            rect: [8192, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_01',
                             type: 'image',
+                            id: 'panorac_01',
+                            rect: [8192, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_01.png', '0px', '0px']
                         },
                         {
-                            rect: [9216, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_02',
                             type: 'image',
+                            id: 'panorac_02',
+                            rect: [9216, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_02.png', '0px', '0px']
                         },
                         {
-                            rect: [11264, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorac_04',
                             type: 'image',
+                            id: 'panorac_04',
+                            rect: [11264, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorac_04.png', '0px', '0px']
                         },
                         {
-                            rect: [12288, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorad_05',
                             type: 'image',
+                            id: 'panorad_05',
+                            rect: [12288, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorad_05.png', '0px', '0px']
                         },
                         {
-                            rect: [13311, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorad_06',
                             type: 'image',
+                            id: 'panorad_06',
+                            rect: [13311, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorad_06.png', '0px', '0px']
                         },
                         {
-                            rect: [14335, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorad_07',
                             type: 'image',
+                            id: 'panorad_07',
+                            rect: [14335, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorad_07.png', '0px', '0px']
                         },
                         {
-                            rect: [15359, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorad_08',
                             type: 'image',
+                            id: 'panorad_08',
+                            rect: [15359, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorad_08.png', '0px', '0px']
                         },
                         {
-                            rect: [12288, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorad_01',
                             type: 'image',
+                            id: 'panorad_01',
+                            rect: [12288, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorad_01.png', '0px', '0px']
                         },
                         {
-                            rect: [16383, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_05',
                             type: 'image',
+                            id: 'panorae_05',
+                            rect: [16383, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_05.png', '0px', '0px']
                         },
                         {
-                            rect: [17407, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_06',
                             type: 'image',
+                            id: 'panorae_06',
+                            rect: [17407, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_06.png', '0px', '0px']
                         },
                         {
-                            rect: [18430, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_07',
                             type: 'image',
+                            id: 'panorae_07',
+                            rect: [18430, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_07.png', '0px', '0px']
                         },
                         {
-                            rect: [19454, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_08',
                             type: 'image',
+                            id: 'panorae_08',
+                            rect: [19454, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_08.png', '0px', '0px']
                         },
                         {
-                            rect: [17407, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_02',
                             type: 'image',
+                            id: 'panorae_02',
+                            rect: [17407, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_02.png', '0px', '0px']
                         },
                         {
-                            rect: [18430, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_03',
                             type: 'image',
+                            id: 'panorae_03',
+                            rect: [18430, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_03.png', '0px', '0px']
                         },
                         {
-                            rect: [19454, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_04',
                             type: 'image',
+                            id: 'panorae_04',
+                            rect: [19454, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_04.png', '0px', '0px']
                         },
                         {
-                            rect: [20478, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraf_05',
                             type: 'image',
+                            id: 'panoraf_05',
+                            rect: [20478, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraf_05.png', '0px', '0px']
                         },
                         {
-                            rect: [21502, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraf_06',
                             type: 'image',
+                            id: 'panoraf_06',
+                            rect: [21502, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraf_06.png', '0px', '0px']
                         },
                         {
-                            rect: [22526, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraf_07',
                             type: 'image',
+                            id: 'panoraf_07',
+                            rect: [22526, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraf_07.png', '0px', '0px']
                         },
                         {
-                            rect: [23550, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraf_08',
                             type: 'image',
+                            id: 'panoraf_08',
+                            rect: [23550, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraf_08.png', '0px', '0px']
                         },
                         {
-                            rect: [24574, 775, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorag_05',
                             type: 'image',
+                            id: 'panorag_05',
+                            rect: [24574, 775, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorag_05.png', '0px', '0px']
                         },
                         {
-                            rect: [21502, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraf_02',
                             type: 'image',
+                            id: 'panoraf_02',
+                            rect: [21502, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraf_02.png', '0px', '0px']
                         },
                         {
-                            rect: [23550, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoraf_04',
                             type: 'image',
+                            id: 'panoraf_04',
+                            rect: [23550, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoraf_04.png', '0px', '0px']
                         },
                         {
-                            rect: [24713, 1131, '1951px', '1066px', 'auto', 'auto'],
-                            id: 'montagne3copie',
                             transform: [[0, 0, 0], ['-9', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne3copie',
                             type: 'image',
+                            rect: [24713, 1131, '1951px', '1066px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         },
                         {
-                            rect: [25376, 980, '2038px', 848, 'auto', 'auto'],
-                            id: 'montagne1',
                             transform: [[0, 0, 0], ['13', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne1',
                             type: 'image',
+                            rect: [25376, 980, '2038px', 848, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne1.png', '0px', '0px']
                         },
                         {
-                            rect: [-1360, 1077, '2038px', '732px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'montagne12',
-                            type: 'image',
+                            rect: [-1360, 1077, '2038px', '732px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne1.png', '0px', '0px']
                         },
                         {
-                            rect: [16383, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorae_01',
                             type: 'image',
+                            id: 'panorae_01',
+                            rect: [16383, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorae_01.png', '0px', '0px']
                         },
                         {
-                            rect: [15359, 7, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panorad_04',
                             type: 'image',
+                            id: 'panorad_04',
+                            rect: [15359, 7, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panorad_04.png', '0px', '0px']
                         },
                         {
-                            rect: [9174, 1013, '212px', 338, 'auto', 'auto'],
-                            id: 'boutonsport2',
                             type: 'image',
+                            id: 'boutonsport2',
+                            rect: [9174, 1013, '212px', 338, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/boutonsport.png', '0px', '0px']
                         },
                         {
-                            rect: [20045, 829, 181, 226, 'auto', 'auto'],
-                            id: 'boutonpalast',
                             type: 'image',
+                            id: 'boutonpalast',
+                            rect: [20045, 829, 181, 226, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/boutonpalast.png', '0px', '0px']
                         },
                         {
-                            rect: [-3903, 897, '2038px', '732px', 'auto', 'auto'],
-                            id: 'montagne13',
                             type: 'image',
+                            id: 'montagne13',
+                            rect: [-3903, 897, '2038px', '732px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne1.png', '0px', '0px']
                         },
                         {
-                            rect: [-2746, 1066, '1951px', '1066px', 'auto', 'auto'],
-                            id: 'montagne3copie2',
                             type: 'image',
+                            id: 'montagne3copie2',
+                            rect: [-2746, 1066, '1951px', '1066px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         },
                         {
-                            rect: [-4744, 771, 2177, 1590, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'startmontain2',
                             symbolName: 'startmontain2',
-                            type: 'rect'
+                            rect: [-4744, 771, 2177, 1590, 'auto', 'auto']
                         },
                         {
-                            rect: [-2508, 1364, 1161, 120, 'auto', 'auto'],
-                            id: 'terrainfoot',
                             type: 'image',
+                            id: 'terrainfoot',
+                            rect: [-2508, 1364, 1161, 120, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/terrainfoot.png', '0px', '0px']
                         },
                         {
-                            rect: [5623, 999, '400px', '400px', 'auto', 'auto'],
-                            id: 'boutongratteciel',
                             type: 'image',
+                            id: 'boutongratteciel',
+                            rect: [5623, 999, '400px', '400px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/boutonhochhaus_ok.png', '0px', '0px']
                         },
                         {
-                            rect: [11529, 1124, '366px', '265px', 'auto', 'auto'],
-                            id: 'blauestrasse',
                             type: 'image',
+                            id: 'blauestrasse',
+                            rect: [11529, 1124, '366px', '265px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/blauestrasse.png', '0px', '0px']
                         },
                         {
-                            rect: [23334, 7, 1088, 900, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'FumeeGrandeUsine',
                             symbolName: 'FumeeGrandeUsine',
-                            type: 'rect'
+                            rect: [23334, 7, 1088, 900, 'auto', 'auto']
                         },
                         {
-                            rect: [15836, 99, 344, 461, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee8',
                             opacity: '0.24479166291109',
-                            type: 'image',
+                            rect: [15836, 99, 344, 461, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            rect: [15836, 0, 353, 550, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee9',
                             opacity: '0.13008130081301',
-                            type: 'image',
+                            rect: [15836, 0, 353, 550, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee9.gif', '0px', '0px']
                         },
                         {
-                            rect: [15785, -170, 2350, 756, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'FumeeEbeneZwei',
                             symbolName: 'FumeeEbeneZwei',
-                            type: 'rect'
+                            rect: [15785, -170, 2350, 756, 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1103,208 +1104,208 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_013',
                             type: 'image',
+                            id: 'panoramaa_013',
+                            rect: [0, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_01.png', '0px', '0px']
                         },
                         {
-                            rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_02',
                             type: 'image',
+                            id: 'panoramaa_02',
+                            rect: [1024, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_02.png', '0px', '0px']
                         },
                         {
-                            rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_03',
                             type: 'image',
+                            id: 'panoramaa_03',
+                            rect: [2048, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_03.png', '0px', '0px']
                         },
                         {
-                            rect: [3072, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_04',
                             type: 'image',
+                            id: 'panoramaa_04',
+                            rect: [3072, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_04.png', '0px', '0px']
                         },
                         {
-                            rect: [0, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_05',
                             type: 'image',
+                            id: 'panoramaa_05',
+                            rect: [0, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_05.png', '0px', '0px']
                         },
                         {
-                            rect: [1024, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_06',
                             type: 'image',
+                            id: 'panoramaa_06',
+                            rect: [1024, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_06.png', '0px', '0px']
                         },
                         {
-                            rect: [2048, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_07',
                             type: 'image',
+                            id: 'panoramaa_07',
+                            rect: [2048, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_07.png', '0px', '0px']
                         },
                         {
-                            rect: [3072, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramaa_08',
                             type: 'image',
+                            id: 'panoramaa_08',
+                            rect: [3072, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramaa_08.png', '0px', '0px']
                         },
                         {
-                            rect: [4096, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_01',
                             type: 'image',
+                            id: 'panoramab_01',
+                            rect: [4096, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_01.png', '0px', '0px']
                         },
                         {
-                            rect: [5120, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_02',
                             type: 'image',
+                            id: 'panoramab_02',
+                            rect: [5120, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_02.png', '0px', '0px']
                         },
                         {
-                            rect: [6144, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_03',
                             type: 'image',
+                            id: 'panoramab_03',
+                            rect: [6144, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_03.png', '0px', '0px']
                         },
                         {
-                            rect: [7168, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_04',
                             type: 'image',
+                            id: 'panoramab_04',
+                            rect: [7168, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_04.png', '0px', '0px']
                         },
                         {
-                            rect: [4096, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_05',
                             type: 'image',
+                            id: 'panoramab_05',
+                            rect: [4096, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_05.png', '0px', '0px']
                         },
                         {
-                            rect: [5120, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_06',
                             type: 'image',
+                            id: 'panoramab_06',
+                            rect: [5120, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_06.png', '0px', '0px']
                         },
                         {
-                            rect: [6144, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_07',
                             type: 'image',
+                            id: 'panoramab_07',
+                            rect: [6144, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_07.png', '0px', '0px']
                         },
                         {
-                            rect: [7168, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramab_08',
                             type: 'image',
+                            id: 'panoramab_08',
+                            rect: [7168, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramab_08.png', '0px', '0px']
                         },
                         {
-                            rect: [8192, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_01',
                             type: 'image',
+                            id: 'panoramac_01',
+                            rect: [8192, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_01.png', '0px', '0px']
                         },
                         {
-                            rect: [9216, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_02',
                             type: 'image',
+                            id: 'panoramac_02',
+                            rect: [9216, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_02.png', '0px', '0px']
                         },
                         {
-                            rect: [10240, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_03',
                             type: 'image',
+                            id: 'panoramac_03',
+                            rect: [10240, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_03.png', '0px', '0px']
                         },
                         {
-                            rect: [11264, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_04',
                             type: 'image',
+                            id: 'panoramac_04',
+                            rect: [11264, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_04.png', '0px', '0px']
                         },
                         {
-                            rect: [8192, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_05',
                             type: 'image',
+                            id: 'panoramac_05',
+                            rect: [8192, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_05.png', '0px', '0px']
                         },
                         {
-                            rect: [9216, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_06',
                             type: 'image',
+                            id: 'panoramac_06',
+                            rect: [9216, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_06.png', '0px', '0px']
                         },
                         {
-                            rect: [10240, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_07',
                             type: 'image',
+                            id: 'panoramac_07',
+                            rect: [10240, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_07.png', '0px', '0px']
                         },
                         {
-                            rect: [11264, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramac_08',
                             type: 'image',
+                            id: 'panoramac_08',
+                            rect: [11264, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramac_08.png', '0px', '0px']
                         },
                         {
-                            rect: [12288, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramad_01',
                             type: 'image',
+                            id: 'panoramad_01',
+                            rect: [12288, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramad_01.png', '0px', '0px']
                         },
                         {
-                            rect: [13312, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramad_02',
                             type: 'image',
+                            id: 'panoramad_02',
+                            rect: [13312, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramad_02.png', '0px', '0px']
                         },
                         {
-                            rect: [14336, 0, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramad_03',
                             type: 'image',
+                            id: 'panoramad_03',
+                            rect: [14336, 0, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramad_03.png', '0px', '0px']
                         },
                         {
-                            rect: [12288, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramad_05',
                             type: 'image',
+                            id: 'panoramad_05',
+                            rect: [12288, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramad_05.png', '0px', '0px']
                         },
                         {
-                            rect: [13312, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramad_06',
                             type: 'image',
+                            id: 'panoramad_06',
+                            rect: [13312, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramad_06.png', '0px', '0px']
                         },
                         {
-                            rect: [14336, 768, '1024px', '768px', 'auto', 'auto'],
-                            id: 'panoramad_07',
                             type: 'image',
+                            id: 'panoramad_07',
+                            rect: [14336, 768, '1024px', '768px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/panoramad_07.png', '0px', '0px']
                         },
                         {
-                            rect: [-2609, -380, '3256px', '2550px', 'auto', 'auto'],
-                            id: 'montagne5',
                             transform: [[0, 0, 0], ['-329', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'montagne5',
                             type: 'image',
+                            rect: [-2609, -380, '3256px', '2550px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne5.png', '0px', '0px']
                         },
                         {
-                            rect: [-3805, 694, '1951px', '1066px', 'auto', 'auto'],
-                            id: 'montagne3copie',
                             type: 'image',
+                            id: 'montagne3copie',
+                            rect: [-3805, 694, '1951px', '1066px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         },
                         {
-                            rect: ['-4420', '951', 1360, 761, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'startmontain3',
                             symbolName: 'startmontain3',
-                            type: 'rect'
+                            rect: ['-4420', '951', 1360, 761, 'auto', 'auto']
                         },
                         {
-                            rect: [-1625, 951, 233, 176, 'auto', 'auto'],
-                            id: 'maisons4',
                             type: 'image',
+                            id: 'maisons4',
+                            rect: [-1625, 951, 233, 176, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/maisons4.png', '0px', '0px']
                         }
                     ],
@@ -1335,14 +1336,14 @@
                             type: 'rect',
                             id: 'Ebene3',
                             symbolName: 'Ebene3',
-                            opacity: '1',
-                            rect: [14528, 'auto', 15361, 1537, 'auto', -72]
+                            rect: [14528, 'auto', 15361, 1537, 'auto', -72],
+                            opacity: '1'
                         },
                         {
-                            rect: [14586, 'auto', 25598, 1543, 'auto', -78],
+                            type: 'rect',
                             id: 'Ebene2',
                             symbolName: 'Ebene2',
-                            type: 'rect'
+                            rect: [14586, 'auto', 25598, 1543, 'auto', -78]
                         }
                     ],
                     style: {
@@ -1388,8 +1389,8 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             rect: [0, 0, '625px', '569px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'gratteciel',
                             opacity: '1',
                             display: 'none',
@@ -1438,8 +1439,8 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             rect: ['0', '0', '1347', '897', 'auto', 'auto'],
+                            type: 'image',
                             id: 'sport',
                             opacity: '1',
                             display: 'none',
@@ -1479,8 +1480,8 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
                             rect: [0, -88, 1362, 873, 'auto', 'auto'],
+                            type: 'image',
                             id: 'autos',
                             opacity: '1',
                             display: 'none',
@@ -1529,8 +1530,8 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 0, 1123, 818, 'auto', 'auto'],
                             type: 'image',
+                            rect: [0, 0, 1123, 818, 'auto', 'auto'],
                             id: 'palaststadt',
                             opacity: '1',
                             display: 'none',
@@ -1579,10 +1580,10 @@
                 content: {
                     dom: [
                         {
-                            rect: [4363, 'auto', 23544, 1536, 'auto', 0],
+                            type: 'rect',
                             id: 'Ebene1in',
                             symbolName: 'Ebene1',
-                            type: 'rect'
+                            rect: [4363, 'auto', 23544, 1536, 'auto', 0]
                         }
                     ],
                     style: {
@@ -1628,36 +1629,36 @@
                 content: {
                     dom: [
                         {
-                            rect: [-1549, 221, 124, 255, 'auto', 'auto'],
                             type: 'rect',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'RectangleGratteciel',
-                            opacity: '0',
+                            rect: [-1549, 221, 124, 255, 'auto', 'auto'],
                             transform: [[0, 0, 0], ['26', 0, 0], [0, 0], ['1', '1.1102', 1], ['50%', '50%']],
+                            id: 'RectangleGratteciel',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            opacity: '0',
                             fill: ['rgba(203,24,230,1.00)']
                         },
                         {
                             rect: [1885, 216, '116px', 212, 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'RectangleSport',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'RectangleSport',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(188,217,26,1.00)']
                         },
                         {
-                            rect: [4229, 349, 311, 135, 'auto', 'auto'],
                             type: 'rect',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'RectangleAuto',
-                            opacity: '0',
+                            rect: [4229, 349, 311, 135, 'auto', 'auto'],
                             transform: [[0, 0, 0], ['4', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            id: 'RectangleAuto',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            opacity: '0',
                             fill: ['rgba(35,20,231,1.00)']
                         },
                         {
                             rect: [12737, 0, '143px', '175px', 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'RectanglePalast',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'RectanglePalast',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(14,230,159,1.00)']
                         }
@@ -1686,9 +1687,9 @@
                 content: {
                     dom: [
                         {
-                            rect: [316, 0, '1360px', '761px', 'auto', 'auto'],
-                            id: 'montain3',
                             type: 'image',
+                            id: 'montain3',
+                            rect: [316, 0, '1360px', '761px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/montagne6copie.png', '0px', '0px']
                         }
                     ],
@@ -1725,10 +1726,10 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'montain1',
                             rect: [219, 220, '2038px', '732px', 'auto', 'auto'],
+                            id: 'montain1',
                             transform: [[0, 0, 0], ['13', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/montagne1.png', '0px', '0px']
                         }
                     ],
@@ -1765,10 +1766,10 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'montain2',
                             rect: [113, 262, '1951px', '1066px', 'auto', 'auto'],
+                            id: 'montain2',
                             transform: [[0, 0, 0], ['-197', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/montagne3copie.png', '0px', '0px']
                         }
                     ],
@@ -1805,10 +1806,10 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 0, 12880, 487, 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Knoepfe',
                             symbolName: 'Knoepfe',
-                            type: 'rect'
+                            rect: [0, 0, 12880, 487, 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -1844,14 +1845,14 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0', '0', '713', '168', 'auto', 'auto'],
-                            id: 'FEDORA',
                             type: 'group',
+                            id: 'FEDORA',
+                            rect: ['0', '0', '713', '168', 'auto', 'auto'],
                             c: [
                             {
-                                rect: ['9', '7', '700', '153', 'auto', 'auto'],
-                                id: 'fedoraB',
                                 type: 'image',
+                                id: 'fedoraB',
+                                rect: ['9', '7', '700', '153', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/fedoraB.gif', '0px', '0px']
                             }]
                         }
@@ -1881,19 +1882,19 @@
                     dom: [
                         {
                             type: 'rect',
-                            symbolName: 'FEDORA',
+                            rect: [0, 0, 713, 170, 'auto', 'auto'],
                             id: 'FEDORA',
-                            opacity: '0',
+                            symbolName: 'FEDORA',
                             display: 'block',
-                            rect: [0, 0, 713, 170, 'auto', 'auto']
+                            opacity: '0'
                         },
                         {
                             type: 'rect',
-                            symbolName: 'S',
+                            rect: [696, 7, 206, 151, 'auto', 'auto'],
                             id: 'S',
-                            opacity: '0',
+                            symbolName: 'S',
                             display: 'block',
-                            rect: [696, 7, 206, 151, 'auto', 'auto']
+                            opacity: '0'
                         }
                     ],
                     style: {
@@ -1982,20 +1983,20 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 1, 206, 150, 'auto', 'auto'],
-                            id: 'S',
                             type: 'group',
+                            id: 'S',
+                            rect: [0, 1, 206, 150, 'auto', 'auto'],
                             c: [
                             {
-                                rect: [0, -1, 206, 147, 'auto', 'auto'],
-                                id: 'sA',
                                 type: 'image',
+                                id: 'sA',
+                                rect: [0, -1, 206, 147, 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/sA.gif', '0px', '0px']
                             },
                             {
-                                rect: [2, 0, 200, 150, 'auto', 'auto'],
-                                id: 'sB',
                                 type: 'image',
+                                id: 'sB',
+                                rect: [2, 0, 200, 150, 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/sB2.gif', '0px', '0px']
                             }]
                         }
@@ -2024,73 +2025,73 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro1',
                             type: 'image',
+                            id: 'intro1',
                             rect: ['1340', '91', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro1.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro2',
                             type: 'image',
+                            id: 'intro2',
                             rect: ['1937', '164', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro2.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro3',
                             type: 'image',
+                            id: 'intro3',
                             rect: ['2973', '423', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro3.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro4',
                             type: 'image',
+                            id: 'intro4',
                             rect: ['3598', '500', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro4.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro5',
                             type: 'image',
+                            id: 'intro5',
                             rect: ['5114', '197', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro5.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro7',
                             type: 'image',
+                            id: 'intro7',
                             rect: ['6212', '9', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro7.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro8',
                             type: 'image',
+                            id: 'intro8',
                             rect: ['6833', '141', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro8.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro9',
                             type: 'image',
+                            id: 'intro9',
                             rect: ['8630', '-82', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro9.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro10',
                             type: 'image',
+                            id: 'intro10',
                             rect: ['9406', '50', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro10.png', '0px', '0px']
                         },
                         {
-                            transform: [[], [], [], ['0.5', '0.5']],
-                            id: 'intro11',
                             type: 'image',
+                            id: 'intro11',
                             rect: ['10472', '235', '3180px', '200px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0.5', '0.5']],
                             fill: ['rgba(0,0,0,0)', 'images/intro11.png', '0px', '0px']
                         }
                     ],
@@ -2118,10 +2119,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0', '0', '4292', '400', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'text3',
                             symbolName: 'text',
-                            type: 'rect'
+                            rect: ['0', '0', '4292', '400', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -2157,10 +2158,10 @@
                 content: {
                     dom: [
                         {
-                            rect: [2100, 466, 250, 281, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumeeEbene2333',
                             opacity: '0.26807037898438',
-                            type: 'image',
+                            rect: [2100, 466, 250, 281, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         }
                     ],
@@ -2188,38 +2189,38 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
+                            rect: [654, 0, 334, 534, 'auto', 'auto'],
                             id: 'fumeeEbeneE',
                             opacity: '0.13357469197211',
-                            rect: [654, 0, 334, 534, 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee9.gif', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: [22, 334, 225, 467, 'auto', 'auto'],
                             id: 'fumeeEbeneD',
                             opacity: '0.12893800813008',
-                            rect: [22, 334, 225, 467, 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee2.gif', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: [309, 580, 127, 320, 'auto', 'auto'],
                             id: 'fumeeEbeneC',
                             opacity: '0.2163681402439',
-                            rect: [309, 580, 127, 320, 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: [0, 334, 280, 473, 'auto', 'auto'],
                             id: 'fumeeEbeneB',
                             opacity: '0.12230055894309',
-                            rect: [0, 334, 280, 473, 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: [850, 534, 238, 252, 'auto', 'auto'],
                             id: 'fumeeEbeneA',
                             opacity: '0.1869918699187',
-                            rect: [850, 534, 238, 252, 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/fumee9.gif', '0px', '0px']
                         }
                     ],
@@ -2247,66 +2248,66 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 572, 258, 467, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee3',
                             opacity: '0.26184578252033',
-                            type: 'image',
+                            rect: [0, 572, 258, 467, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee82.gif', '0px', '0px']
                         },
                         {
-                            rect: [649, 669, '417px', '756px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee5',
                             opacity: '0.34924415165816',
-                            type: 'image',
+                            rect: [649, 669, '417px', '756px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee82.gif', '0px', '0px']
                         },
                         {
-                            rect: [503, 607, '417px', '756px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee4a',
                             opacity: '0.27610518292683',
-                            type: 'image',
+                            rect: [503, 607, '417px', '756px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee92.gif', '0px', '0px']
                         },
                         {
-                            rect: [510, 629, '417px', '756px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee4b',
                             opacity: '0.29065040650407',
-                            type: 'image',
+                            rect: [510, 629, '417px', '756px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee82.gif', '0px', '0px']
                         },
                         {
-                            rect: [22567, 385, 354, 672, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee85',
                             opacity: '0.28534679878049',
-                            type: 'image',
+                            rect: [22567, 385, 354, 672, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee82.gif', '0px', '0px']
                         },
                         {
-                            rect: [24693, 402, '417px', '756px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee88',
                             opacity: '0.26197281504065',
-                            type: 'image',
+                            rect: [24693, 402, '417px', '756px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee82.gif', '0px', '0px']
                         },
                         {
-                            rect: [1615, 314, '417px', '756px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee1',
                             opacity: '0.17517783147533',
-                            type: 'image',
+                            rect: [1615, 314, '417px', '756px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee12.gif', '0px', '0px']
                         },
                         {
-                            rect: [24736, 591, 306, 573, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee24',
                             opacity: '0.17727388211382',
-                            type: 'image',
+                            rect: [24736, 591, 306, 573, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee22.gif', '0px', '0px']
                         },
                         {
-                            rect: [1604, 461, 428, 630, 'auto', 'auto'],
+                            type: 'image',
                             id: 'fumee8',
                             opacity: '0.3325393800813',
-                            type: 'image',
+                            rect: [1604, 461, 428, 630, 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/fumee8.gif', '0px', '0px']
                         }
                     ],
@@ -2334,11 +2335,11 @@
                 content: {
                     dom: [
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.65', '0.65', 1], ['50%', '50%']],
+                            rect: [-171, -51, 2754, 483, 'auto', 'auto'],
                             id: 'oiseaux',
                             symbolName: 'oiseauxEbene3',
-                            rect: [-171, -51, 2754, 483, 'auto', 'auto'],
-                            type: 'rect'
+                            type: 'rect',
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.65', '0.65', 1], ['50%', '50%']]
                         }
                     ],
                     style: {
@@ -2396,38 +2397,38 @@
                 content: {
                     dom: [
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau1',
                             type: 'image',
+                            id: 'oiseau1',
                             rect: [0, 302, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau1.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau2',
                             type: 'image',
+                            id: 'oiseau2',
                             rect: [136, 237, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau2.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau3',
                             type: 'image',
+                            id: 'oiseau3',
                             rect: [1693, 0, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau3.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau4',
                             type: 'image',
+                            id: 'oiseau4',
                             rect: [2137, 77, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau4.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau6',
                             type: 'image',
+                            id: 'oiseau6',
                             rect: [3405, -145, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau6.gif', '0px', '0px']
                         }
                     ],
@@ -2504,12 +2505,12 @@
                 content: {
                     dom: [
                         {
-                            transform: [[], [], [], ['0.76', '0.76']],
                             rect: ['2593', '28', '570', '191', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'oiseauxGroupe',
                             symbolName: 'oiseauxGroupe_1',
                             opacity: '1',
-                            type: 'rect'
+                            transform: [[], [], [], ['0.76', '0.76']]
                         }
                     ],
                     style: {
@@ -2567,38 +2568,38 @@
                 content: {
                     dom: [
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau13',
                             type: 'image',
+                            id: 'oiseau13',
                             rect: [150, 2, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau12.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau22',
                             type: 'image',
+                            id: 'oiseau22',
                             rect: [13, -17, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau22.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau32',
                             type: 'image',
+                            id: 'oiseau32',
                             rect: [-39, -70, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau32.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau42',
                             type: 'image',
+                            id: 'oiseau42',
                             rect: [415, -36, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau42.gif', '0px', '0px']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
-                            id: 'oiseau62',
                             type: 'image',
+                            id: 'oiseau62',
                             rect: [232, 46, '194px', '181px', 'auto', 'auto'],
+                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.6', '0.6', 1], ['50%', '50%']],
                             fill: ['rgba(0,0,0,0)', 'images/oiseau62.gif', '0px', '0px']
                         }
                     ],
