@@ -15,8 +15,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       Symbol.bindElementAction(compId, symbolName, "${Stage}", "touchstart", function(sym, e) {
          e.preventDefault();
-         
-         var touch = e.touches[0] || e.changedTouches[0];
+
+         var event = e.originalEvent || e; 
+         var touch = event.touches[0] || event.changedTouches[0];
          
          sym.startPosTouch = touch.pageX;
          sym.startPosTime = curPos;
@@ -135,7 +136,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${Stage}", "touchmove", function(sym, e) {
          e.preventDefault();
-         var touch = e.touches[0] || e.changedTouches[0];
+         var event = e.originalEvent || e; 
+         var touch = event.touches[0] || event.changedTouches[0];
          sym.getComposition().getStage().onSwipe( touch.pageX );
 
       });
@@ -274,7 +276,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
    
       Symbol.bindElementAction(compId, symbolName, "${RectangleGratteciel}", "touchstart", function(sym, e) {
-         var xPosition = e.touches[0].pageX;
+         var event = e.originalEvent || e; 
+         var touch = event.touches[0] || event.changedTouches[0];
+         var xPosition = touch.pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("grattecielstadt");
          
@@ -320,7 +324,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${RectangleSport}", "touchstart", function(sym, e) {
-         var xPosition = e.touches[0].pageX;
+         var event = e.originalEvent || e; 
+         var touch = event.touches[0] || event.changedTouches[0];         
+         var xPosition = touch.pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("sportstadt");
          
@@ -365,7 +371,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${RectangleAuto}", "touchstart", function(sym, e) {
-         var xPosition = e.touches[0].pageX;
+         var event = e.originalEvent || e; 
+         var touch = event.touches[0] || event.changedTouches[0];         
+         var xPosition = touch.pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("autostadt");
          
@@ -410,7 +418,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${RectanglePalast}", "touchstart", function(sym, e) {
-         var xPosition = e.touches[0].pageX;
+         var event = e.originalEvent || e; 
+         var touch = event.touches[0] || event.changedTouches[0];         
+         var xPosition = touch.pageX;
          
          var eineStadt = sym.getParentSymbol().getParentSymbol().getSymbol("palaststadt");
          
