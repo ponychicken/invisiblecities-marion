@@ -8,23 +8,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.1.min.js"></script>
     <style>
-        .edgeLoad-EDGE-66808672 { visibility:hidden; }
+        .edgeLoad-MARION { visibility:hidden; }
     </style>
 <script>
-   AdobeEdge.loadComposition('index', 'EDGE-66808672', {
+   AdobeEdge.loadComposition('index', 'MARION', {
     scaleToFit: "none",
     centerStage: "none",
     minW: "0",
     maxW: "undefined",
     width: "2048",
     height: "1536"
-}, {"dom":[]}, {"dom":[]});
+}, {
+    dom: [
+        {
+            id: 'FedoraPreloader',
+            type: 'image',
+            tag: 'img',
+            rect: ['0px', '0px', '2048px', '1536px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/FedoraPreloader.png','0px','0px']
+        },
+        {
+            id: 'preloader1',
+            type: 'image',
+            tag: 'img',
+            rect: ['982', '725px', '85px', '85px', 'auto', 'auto'],
+            fill: ["rgba(0,0,0,0)",'images/preloader1.gif','0px','0px']
+        }
+    ],
+    style: {
+        '${symbolSelector}': {
+            isStage: true,
+            rect: [undefined, undefined, '2048px', '1536px'],
+            fill: ["rgba(255,255,255,1)"]
+        }
+    }
+}, {"dom":[]});
 </script>
 <!--Adobe Edge Runtime End-->
 
 </head>
 <body style="margin:0;padding:0;">
-	<div id="Stage" class="EDGE-66808672">
+	<div id="Stage" class="MARION">
 	</div>
 </body>
 </html>

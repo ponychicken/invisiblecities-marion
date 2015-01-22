@@ -25,114 +25,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
-         //______________________________ TITLE ____________________________________
-         
-         sym.play("titre");
-         
-         //____________________________ PARALLAX ___________________________________
-         
-         sym.stageWidth = sym.$('Stage').width();
-         sym.animTimelineLength = 40000;
-         
-         marionStinkt = false;
-         
-         curPos = 0;
-         
-         sym.onSwipe = function(pos)
-         {
-         	var diff = sym.startPosTouch - pos;
-         	curPos = sym.startPosTime + diff/40;
-         
-         	if (curPos < 0) curPos = 0;
-         	if (curPos > 2048) curPos = 2048;
-         
-         	calculatedPos = (curPos/sym.stageWidth) * sym.animTimelineLength;
-         
-         	if (marionStinkt){
-         		// scrub to corresponding anim frame
-         		sym.getSymbol("parallax").stop(calculatedPos);
-         		sym.getSymbol("Ebene1out").stop(calculatedPos);
-         		sym.getSymbol("neuKnopf").stop(calculatedPos);
-         		sym.getSymbol("textes").stop(calculatedPos);
-         	}
-         
-         
-         //__________________________________ AUDIO ___________________________________________
-         
-         
-         	Howler.position(calculatedPos/500, 0, 0);
-         
-         }		
-         
-         
-         radiocigales = new Howl({
-           urls: ['media/radiocigales.mp3'],
-           volume:6
-         });
-         
-         circus = new Howl({
-           urls: ['media/circus.mp3']
-         });
-         
-         tropical = new Howl({
-           urls: ['media/tropical.mp3'],
-           volume:5
-         });
-         
-         formule1 = new Howl({
-           urls: ['media/formule1.mp3'],
-           volume:7
-         });
-         
-         ville1 = new Howl({
-           urls: ['media/ville1.mp3'],
-           autoplay: true,
-           loop: true
-         }).position(12, 0, -0.5);
-         
-         villevivante1 = new Howl({
-           urls: ['media/villevivante1.mp3'],
-           autoplay: true,
-           loop: true
-         }).position(28, 0, -0.5);
-         
-         tram1 = new Howl({
-           urls: ['media/tram1.mp3'],
-           autoplay: true,
-           loop: true
-         }).position(38, 0, -0.5);
-         
-         pinpon1 = new Howl({
-           urls: ['media/pinpon1.mp3'],
-           autoplay: true,
-           loop: true,
-           volume: 2
-         }).position(60, 0, -4.5);
-         
-         walkloop1 = new Howl({
-           urls: ['media/walkloop1.mp3'],
-           autoplay: true,
-           loop: true
-         }).position(0, 0, -0.5);
-         
-         eglise = new Howl({
-           urls: ['media/eglise.mp3'],
-           autoplay: true,
-           loop: true,
-           rolloffFactor:6,
-         }).position(66, 4, -0.5);
-         
-         muezzin = new Howl({
-           urls: ['media/muezzin.mp3'],
-           autoplay: true,
-           loop: true,
-           rolloffFactor:5,
-         }).position(30, 1, -0.5);
-         
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindElementAction(compId, symbolName, "${Stage}", "touchmove", function(sym, e) {
          e.preventDefault();
@@ -170,6 +63,112 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          //_________________ PARALLAXE WIRD NUR JETZT ACTIV ____________
          
          marionStinkt = true;
+         
+         setTimeout(function() {
+         	radiocigales = new Howl({
+         	  urls: ['media/radiocigales.mp3'],
+         	  volume:6
+         	});
+         
+         	circus = new Howl({
+         	  urls: ['media/circus.mp3']
+         	});
+         
+         	tropical = new Howl({
+         	  urls: ['media/tropical.mp3'],
+         	  volume:5
+         	});
+         
+         	formule1 = new Howl({
+         	  urls: ['media/formule1.mp3'],
+         	  volume:7
+         	});
+         
+         	ville1 = new Howl({
+         	  urls: ['media/ville1.mp3'],
+         	  autoplay: true,
+         	  loop: true
+         	}).position(12, 0, -0.5);
+         
+         	villevivante1 = new Howl({
+         	  urls: ['media/villevivante1.mp3'],
+         	  autoplay: true,
+         	  loop: true
+         	}).position(28, 0, -0.5);
+         
+         	tram1 = new Howl({
+         	  urls: ['media/tram1.mp3'],
+         	  autoplay: true,
+         	  loop: true
+         	}).position(38, 0, -0.5);
+         
+         	pinpon1 = new Howl({
+         	  urls: ['media/pinpon1.mp3'],
+         	  autoplay: true,
+         	  loop: true,
+         	  volume: 2
+         	}).position(60, 0, -4.5);
+         
+         	walkloop1 = new Howl({
+         	  urls: ['media/walkloop1.mp3'],
+         	  autoplay: true,
+         	  loop: true
+         	}).position(0, 0, -0.5);
+         
+         	eglise = new Howl({
+         	  urls: ['media/eglise.mp3'],
+         	  autoplay: true,
+         	  loop: true,
+         	  rolloffFactor:6,
+         	}).position(66, 4, -0.5);
+         
+         	muezzin = new Howl({
+         	  urls: ['media/muezzin.mp3'],
+         	  autoplay: true,
+         	  loop: true,
+         	  rolloffFactor:5,
+         	}).position(30, 1, -0.5);
+         }, 500);
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym, e) {
+         //______________________________ TITLE ____________________________________
+         
+         sym.play("titre");
+         
+         //____________________________ PARALLAX ___________________________________
+         
+         sym.stageWidth = sym.$('Stage').width();
+         sym.animTimelineLength = 40000;
+         
+         marionStinkt = false;
+         
+         curPos = 0;
+         
+         sym.onSwipe = function(pos) {
+         	var diff = sym.startPosTouch - pos;
+         	curPos = sym.startPosTime + diff/40;
+         
+         	if (curPos < 0) curPos = 0;
+         	if (curPos > 2048) curPos = 2048;
+         
+         	calculatedPos = (curPos/sym.stageWidth) * sym.animTimelineLength;
+         
+         	if (marionStinkt){
+         		// scrub to corresponding anim frame
+         		sym.getSymbol("parallax").stop(calculatedPos);
+         		sym.getSymbol("Ebene1out").stop(calculatedPos);
+         		sym.getSymbol("neuKnopf").stop(calculatedPos);
+         		sym.getSymbol("textes").stop(calculatedPos);
+         	}
+         
+         
+            //__________________________________ AUDIO ___________________________________________
+         	Howler.position(calculatedPos/500, 0, 0);
+         }
+         
 
       });
       //Edge binding end
@@ -630,4 +629,4 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("oiseauxGroupe_1");
    //Edge symbol end:'oiseauxGroupe_1'
 
-})(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-66808672");
+})(window.jQuery || AdobeEdge.$, AdobeEdge, "MARION");
